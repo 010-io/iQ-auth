@@ -15,6 +15,7 @@ export declare const AUTH_METHODS: {
     readonly FIDO2: "fido2";
     readonly BIOMETRIC: "biometric";
     readonly BLOCKCHAIN: "blockchain";
+    readonly WALLET: "wallet";
     readonly GOVERNMENT: "government";
     readonly SOCIAL: "social";
     readonly PASSWORD: "password";

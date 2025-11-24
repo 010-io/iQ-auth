@@ -63,11 +63,10 @@ export class WalletProvider implements IAuthProvider {
   readonly name = 'wallet';
   readonly type = AUTH_METHODS.WALLET;
 
-  private walletConfig: WalletConfig;
   private connections: Map<string, WalletConnection> = new Map();
 
-  constructor(config: WalletConfig = {}) {
-    this.walletConfig = config;
+  constructor(_config: WalletConfig = {}) {
+    // Config can be used in future for chain configuration
   }
 
   /**
@@ -342,6 +341,7 @@ export class WalletProvider implements IAuthProvider {
 export class WalletPlugin implements IAuthPlugin {
   readonly name = 'wallet';
   readonly version = '0.1.0';
+  readonly type = 'wallet' as const;
 
   provider: WalletProvider;
 

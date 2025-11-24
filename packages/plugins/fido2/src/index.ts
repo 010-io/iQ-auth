@@ -468,6 +468,7 @@ export class FIDO2Provider implements IAuthProvider {
 export class FIDO2Plugin implements IAuthPlugin {
   readonly name = 'fido2';
   readonly version = '0.1.0';
+  readonly type = 'fido2' as const;
 
   provider: FIDO2Provider;
 
@@ -483,7 +484,7 @@ export class FIDO2Plugin implements IAuthPlugin {
 
   async initialize(config: Record<string, unknown>): Promise<void> {
     if (config.rpName || config.rpId || config.origin) {
-      this.provider = new FIDO2Provider(config as FIDO2Config);
+      this.provider = new FIDO2Provider(config as unknown as FIDO2Config);
     }
   }
 

@@ -18,6 +18,7 @@ exports.AUTH_METHODS = {
     FIDO2: 'fido2',
     BIOMETRIC: 'biometric',
     BLOCKCHAIN: 'blockchain',
+    WALLET: 'wallet',
     GOVERNMENT: 'government',
     SOCIAL: 'social',
     PASSWORD: 'password',

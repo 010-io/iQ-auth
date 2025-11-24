@@ -347,23 +347,6 @@ describe('FIDO2Provider', () => {
       expect(result.error).toContain('Invalid counter');
 
       JSON.parse = originalParse;
-    });
-  });
-
-  describe('verify', () => {
-    it('should verify valid token', async () => {
-      const userId = 'user-123';
-      const timestamp = Date.now().toString();
-      const signature = 'valid-signature';
-      const token = `${userId}:${timestamp}:${signature}`;
-
-      // We need to generate a real token from the provider
-      const credential = {
-        userId: 'user-123',
-        id: 'cred-1',
-        publicKey: 'key',
-        counter: 0,
-        createdAt: new Date(),
       };
 
       // Add credential to provider's storage

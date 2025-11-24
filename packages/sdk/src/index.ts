@@ -6,7 +6,6 @@ import {
   IQAuth,
   CoreConfig,
   Identity,
-  detectPlatform,
   detectCapabilities,
   recommendAuthMethods,
   DeviceCapabilities,

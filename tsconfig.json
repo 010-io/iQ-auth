@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2020", "DOM"],
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@iq-auth/core": ["./packages/core/src"],
+      "@iq-auth/sdk": ["./packages/sdk/src"],
+      "@iq-auth/cli": ["./packages/cli/src"],
+      "@iq-auth/ai": ["./packages/ai-assistant/src"],
+      "@iq-auth/plugin-fido2": ["./packages/plugins/fido2/src"],
+      "@iq-auth/plugin-diia": ["./packages/plugins/diia/src"],
+      "@iq-auth/plugin-blockchain": ["./packages/plugins/blockchain/src"],
+      "@iq-auth/plugin-biometric": ["./packages/plugins/biometric/src"],
+      "@iq-auth/plugin-linkedin": ["./packages/plugins/linkedin/src"],
+      "@iq-auth/plugin-wallet": ["./packages/plugins/wallet/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", "coverage", ".next", ".vitepress"]
+}

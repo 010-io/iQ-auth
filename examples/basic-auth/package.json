@@ -1,0 +1,17 @@
+{
+  "name": "iq-auth-basic-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Basic authentication example using iQ-auth",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@iq-auth/sdk": "workspace:*",
+    "@iq-auth/plugin-fido2": "workspace:*"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

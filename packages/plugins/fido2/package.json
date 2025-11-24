@@ -1,0 +1,29 @@
+{
+  "name": "@iq-auth/plugin-fido2",
+  "version": "0.1.0",
+  "description": "FIDO2/WebAuthn plugin for iQ-auth",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "fido2",
+    "webauthn",
+    "authentication"
+  ],
+  "author": "Igor Omelchenko (010io)",
+  "license": "MIT",
+  "dependencies": {
+    "@iq-auth/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

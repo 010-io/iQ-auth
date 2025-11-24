@@ -1,0 +1,35 @@
+{
+  "name": "@iq-auth/plugin-wallet",
+  "version": "0.1.0",
+  "description": "Cryptocurrency wallet authentication plugin for iQ-auth",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "iq-auth",
+    "wallet",
+    "web3",
+    "metamask",
+    "ledger",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "author": "Igor Omelchenko <010io>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@iq-auth/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

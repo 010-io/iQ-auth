@@ -1,13 +1,20 @@
 # iQ-auth 🔐
 
+**AI-Powered Multi-Factor Authentication Framework | Not XMPP/Jabber**
+
 [![CI](https://github.com/010-io/iQ-auth/workflows/CI/badge.svg)](https://github.com/010-io/iQ-auth/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg)](https://pnpm.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
 [![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)
 
-**Інноваційна модульна система авторизації з динамічним крипто-ланцюгом, AutoVersioning та AI-інтеграцією для мультифакторної ідентифікації.**
+> **⚠️ IMPORTANT:** This is a **modern authentication framework** for AI/FIDO2/Blockchain/GovTech. **NOT related to legacy XMPP `jabber:iq:auth`** protocol. If you're looking for Jabber/Openfire/ejabberd XML authentication, this is not the project you need.
 
-iQ-auth — це сучасний TypeScript-фреймворк для побудови безпечних, розширюваних систем автентифікації та ідентифікації з підтримкою FIDO2, біометрії, blockchain-гаманців, державних ID (Diia.gov.ua), соціальних мереж та AI-асистентів.
+**Інноваційна модульна система авторизації з динамічним крипто-ланцюгом, AI-інтеграцією та мультифакторною ідентифікацією для сучасних веб/мобільних додатків.**
+
+iQ-auth — це TypeScript/Node.js фреймворк нового покоління для побудови захищених, розширюваних систем автентифікації з підтримкою **FIDO2/WebAuthn**, **біометрії**, **blockchain-гаманців**, **державної цифрової ідентифікації (Diia.gov.ua)**, **соціальних мереж** та **локальних AI-асистентів** (Ollama/Llama).
+
+**Built by:** [Igor Omelchenko (010io)](https://github.com/010-io) — AI/Mesh Architect, GovTech Developer
 
 ---
 
